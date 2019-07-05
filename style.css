@@ -1,3 +1,7 @@
+/* *, *:after, *:before {
+    box-sizing: border-box;
+} изменяет мне фон картинки*/
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -59,6 +63,7 @@ body {
     justify-content: space-between;
     border-bottom: 1px solid #eaeaea;
     margin-bottom: 20px; 
+    padding-bottom: 0;
 }
 
 .tabs-logo {
@@ -75,6 +80,11 @@ body {
 .tabs-menu__item {
     margin-left: 15px;
     position: relative;
+}
+
+.tabs-menu__item:hover {
+    border-bottom: 5px solid yellow;
+    margin-bottom: 0;
 }
 
 .tabs-content {
@@ -106,7 +116,7 @@ body {
     border: none;
 }
 
-/* 2 БЛОК */
+/* 2 БЛОК И 3 БЛОК*/
 .section-title {
     font-size: 30px;
     text-align: center;
@@ -195,5 +205,132 @@ body {
     padding-top: 10px;
 }
 
+/* 4 БЛОК  */
+.delivery {
+    padding-top: 60px;
+    margin-bottom: 100px;
+}
 
+.form {
+    padding-top: 40px;
+    max-width: 600px;
+    margin: auto;
+}
 
+.input {
+    background-color: #f7f8ff;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 20px;
+    width: 100%;
+}
+
+.form__input {
+    margin-bottom : 20px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-100 {
+    flex-basis: 100%;
+}
+
+.col-50 {
+    flex-basis: 49%;
+}
+
+.button-block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+.footer__text {
+    text-align: center;
+    max-width: 670px;
+    margin: auto;
+    font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 760px;
+    }
+    .tabs-content {
+        background-size: 250px;
+        background-position: bottom right 80px;
+    }
+    .card_bottom {
+        background-size: contain;
+        background-position: center right 0;
+    }
+    .card__text {
+        max-width: 300px;
+    }
+    .card-wrap {
+        flex-wrap: wrap;
+    }
+    .card-block {
+        flex-basis: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .tabs-content {
+        background-size: 220px;
+        background-position: bottom right 50px;
+    }
+    .card_bottom {
+        background-image: none;
+    }
+    .card {
+        margin-right: 0;
+        flex-basis: 100%;
+    }
+    .card-block {
+        flex-basis: 40%;
+        margin: auto;
+    }
+    .best-card__text {
+        margin-bottom: 20px;
+}
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+    .tabs-content {
+        background-size: 180px;
+        background-position: bottom right 20px;
+    }
+    .nav {
+        display: none;
+    }
+    .tabs-menu__item {
+        font-size: 12px;
+    }
+    .tabs-logo {
+        display: none;
+    }
+    
+}
