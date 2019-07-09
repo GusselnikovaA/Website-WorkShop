@@ -63,7 +63,6 @@ body {
     justify-content: space-between;
     border-bottom: 1px solid #eaeaea;
     margin-bottom: 20px; 
-    padding-bottom: 0;
 }
 
 .tabs-logo {
@@ -74,17 +73,18 @@ body {
 .tabs-menu {
     list-style: none;
     padding: 0;
-    display: flex;
+    display: inline;
 }
 
 .tabs-menu__item {
     margin-left: 15px;
-    position: relative;
+    display: inline;
+    border-bottom: 5px solid none;
+    padding-bottom: 14px;
 }
 
 .tabs-menu__item:hover {
-    border-bottom: 5px solid yellow;
-    margin-bottom: 0;
+    border-bottom: 5px solid #fcde29;
 }
 
 .tabs-content {
